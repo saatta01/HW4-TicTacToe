@@ -34,8 +34,12 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (winner == "I") {
                 if (currentPlayer == "X") {
+                    Toast toast = Toast.makeText(this, "O's turn!", Toast.LENGTH_SHORT);
+                    toast.show();
                     currentPlayer = "O";
                 } else {
+                    Toast toast = Toast.makeText(this, "X's turn!", Toast.LENGTH_SHORT);
+                    toast.show();
                     currentPlayer = "X";
                 }
             }
